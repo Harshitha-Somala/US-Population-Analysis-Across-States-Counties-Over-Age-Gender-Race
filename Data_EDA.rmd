@@ -104,7 +104,7 @@ print(df_state)
 
 
 ```{r}
-df_fips <- read.csv("data/COUNTY-FIPS.csv")
+df_fips <- read.csv("data/County-Fips.csv")
 df_fips
 ```
 
