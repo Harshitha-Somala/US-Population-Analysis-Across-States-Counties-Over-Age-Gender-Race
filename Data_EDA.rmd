@@ -1,0 +1,187 @@
+---
+title: "Data Cleaning"
+output: html_notebook
+---
+
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+# read data
+data <- read.csv('data/2018_Data.csv')
+print(data)
+```
+
+```{r}
+# Read required columns file (column)
+column <- read.csv('data/2018_MetaData.csv')
+
+# select the required columns from the total data
+main_df <- select(data, column$Column_Name)
+print(main_df)
+```
+
+```{r}
+main_df <- main_df[-c(1),]
+```
+
+```{r}
+rownames(main_df) <- 1:nrow(main_df)
+```
+
+```{r}
+print(main_df)
+```
+
+
+
+```{r}
+main_df <- main_df %>% 
+           rename_at(vars(GEO_ID:DP05_0089E), ~ column$Label_Shortcut) %>% 
+           separate_wider_delim(NAME, ",", names = c('COUNTY', 'STATE'))
+           
+```
+
+```{r}
+main_df$COUNTY <- gsub(" County", "", as.character(main_df$COUNTY))
+```
+
+
+```{r}
+print(main_df)
+```
+
+```{r}
+# Check Null values
+sum(is.null(main_df))
+```
+
+```{r}
+sapply(main_df, class)
+```
+
+```{r}
+# Function to convert from character to integer without error handling
+convert_to_integer <- function(x) {
+  as.integer(ifelse(grepl("^-?\\d+$", x), x, NA))
+}
+
+# Function to convert from character to numeric without error handling
+convert_to_numeric <- function(x) {
+  as.numeric(ifelse(grepl("^-?\\d+\\.?\\d*$", x), x, NA))
+}
+
+# Columns to convert to float
+float_columns <- c("SA_TP_SEX_RATIO", 
+                   "SA_TP_MEDIAN_AGE", 
+                   "SA_TP_18_ABOVE_SEX_RATIO", 
+                   "SA_TP_65_ABOVE_SEX_RATIO")
+
+character_columns <- c("GEO_ID", "COUNTY", "STATE")
+
+# Columns to convert to integer
+integer_columns <- setdiff(names(main_df), c(float_columns, character_columns))
+
+main_df <- main_df %>%
+  mutate(across(all_of(float_columns), convert_to_numeric),
+         across(all_of(integer_columns), convert_to_integer))
+```
+
+```{r}
+print(main_df)
+```
+
+```{r}
+state <- unique(main_df$STATE)
+df_state <- data.frame(state)
+print(df_state)
+```
+
+
+### STATE - COUNTY - FIPS
+
+
+```{r}
+df_fips <- read.csv("data/COUNTY-FIPS.csv")
+df_fips
+```
+
+
+```{r}
+
+# add leading zeros
+df_fips <- data.frame(distinct(df_fips))
+df_fips$FIPS_CODE <- sprintf("%05d", df_fips$FIPS_CODE)
+print(df_fips)
+```
+
+```{r}
+df_state_abbr <- read.csv("data/State-Abbr.csv")
+df_state_abbr
+```
+
+```{r}
+df_fips_state <- merge(df_fips, df_state_abbr, by = c("STATE","STATE_ABBR"))
+df_fips_state
+```
+
+```{r}
+df_fips_state <- df_fips_state[order(df_fips_state$STATE, df_fips_state$COUNTY), ]
+rownames(df_fips_state) <- 1:nrow(df_fips_state)
+df_fips_state$COUNTY <- gsub(" County", "", as.character(df_fips_state$COUNTY))
+df_fips_state
+```
+
+
+```{r}
+# write.csv(df_fips_state, "data/County-Fips.csv", row.names = FALSE)
+```
+
+```{r}
+# Trim Preceding or succeeding spaces
+main_df$STATE <- trimws(main_df$STATE)
+
+df <- merge(main_df, df_fips_state, by = c("COUNTY", "STATE"))
+df
+```
+
+```{r}
+print(sum(is.na(df)))
+
+# Get null values in dataframe
+df[!complete.cases(df), ]
+```
+
+```{r}
+df$SA_TP_65_ABOVE_SEX_RATIO[is.na(df$SA_TP_65_ABOVE_SEX_RATIO)] <- 0
+print(sum(is.na(df)))
+```
+
+```{r}
+df <- df[order(df$STATE, df$COUNTY), ]
+rownames(df) <- 1:nrow(df)
+df
+```
+
+'
+```{r}
+# write.csv(df, "data/Cleaned_df.csv", row.names = FALSE )
+```
+
+```{r}
+# Check the uncompatible lines
+
+# missing_combinations <- anti_join(main_df, df_fips_state, by = c("COUNTY", "STATE"))
+# missing_combinations
+```
+
+```{r}
+
+```
+
+
+
+
+

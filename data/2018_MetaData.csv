@@ -1,0 +1,88 @@
+Column_Name,Label,Label_Shortcut
+GEO_ID,Geography,GEO_ID
+NAME,Geographic Area Name,NAME
+DP05_0001E,Estimate!!SEX AND AGE!!Total population,SA_TOTAL_POPULATION
+DP05_0002E,Estimate!!SEX AND AGE!!Total population!!Male,SA_TP_MALE
+DP05_0003E,Estimate!!SEX AND AGE!!Total population!!Female,SA_TP_FEMALE
+DP05_0004E,Estimate!!SEX AND AGE!!Total population!!Sex ratio (males per 100 females),SA_TP_SEX_RATIO
+DP05_0005E,Estimate!!SEX AND AGE!!Total population!!Under 5 years,SA_TP_UNDER_5
+DP05_0006E,Estimate!!SEX AND AGE!!Total population!!5 to 9 years,SA_TP_5_TO_9
+DP05_0007E,Estimate!!SEX AND AGE!!Total population!!10 to 14 years,SA_TP_10_TO_14
+DP05_0008E,Estimate!!SEX AND AGE!!Total population!!15 to 19 years,SA_TP_15_TO_19
+DP05_0009E,Estimate!!SEX AND AGE!!Total population!!20 to 24 years,SA_TP_20_TO_24
+DP05_0010E,Estimate!!SEX AND AGE!!Total population!!25 to 34 years,SA_TP_25_TO_34
+DP05_0011E,Estimate!!SEX AND AGE!!Total population!!35 to 44 years,SA_TP_35_TO_44
+DP05_0012E,Estimate!!SEX AND AGE!!Total population!!45 to 54 years,SA_TP_45_TO_54
+DP05_0013E,Estimate!!SEX AND AGE!!Total population!!55 to 59 years,SA_TP_55_TO_59
+DP05_0014E,Estimate!!SEX AND AGE!!Total population!!60 to 64 years,SA_TP_60_TO_64
+DP05_0015E,Estimate!!SEX AND AGE!!Total population!!65 to 74 years,SA_TP_65_TO_74
+DP05_0016E,Estimate!!SEX AND AGE!!Total population!!75 to 84 years,SA_TP_75_TO_84
+DP05_0017E,Estimate!!SEX AND AGE!!Total population!!85 years and over,SA_TP_85_ABOVE
+DP05_0018E,Estimate!!SEX AND AGE!!Total population!!Median age (years),SA_TP_MEDIAN_AGE
+DP05_0019E,Estimate!!SEX AND AGE!!Total population!!Under 18 years,SA_TP_UNDER_18
+DP05_0020E,Estimate!!SEX AND AGE!!Total population!!16 years and over,SA_TP_16_ABOVE
+DP05_0021E,Estimate!!SEX AND AGE!!Total population!!18 years and over,SA_TP_18_ABOVE
+DP05_0022E,Estimate!!SEX AND AGE!!Total population!!21 years and over,SA_TP_21_ABOVE
+DP05_0023E,Estimate!!SEX AND AGE!!Total population!!62 years and over,SA_TP_62_ABOVE
+DP05_0024E,Estimate!!SEX AND AGE!!Total population!!65 years and over,SA_TP_65_ABOVE
+DP05_0026E,Estimate!!SEX AND AGE!!Total population!!18 years and over!!Male,SA_TP_18_ABOVE_MALE
+DP05_0027E,Estimate!!SEX AND AGE!!Total population!!18 years and over!!Female,SA_TP_18_ABOVE_FEMALE
+DP05_0028E,Estimate!!SEX AND AGE!!Total population!!18 years and over!!Sex ratio (males per 100 females),SA_TP_18_ABOVE_SEX_RATIO
+DP05_0030E,Estimate!!SEX AND AGE!!Total population!!65 years and over!!Male,SA_TP_65_ABOVE_MALE
+DP05_0031E,Estimate!!SEX AND AGE!!Total population!!65 years and over!!Female,SA_TP_65_ABOVE_FEMALE
+DP05_0032E,Estimate!!SEX AND AGE!!Total population!!65 years and over!!Sex ratio (males per 100 females),SA_TP_65_ABOVE_SEX_RATIO
+DP05_0033E,Estimate!!RACE!!Total population,RACE_TOTAL_POP
+DP05_0034E,Estimate!!RACE!!Total population!!One race,RACE_TP_1_RACE
+DP05_0035E,Estimate!!RACE!!Total population!!Two or more races,RACE_TP_2_OR_MORE_RACES
+DP05_0037E,Estimate!!RACE!!Total population!!One race!!White,RACE_TP_1_WHITE
+DP05_0038E,Estimate!!RACE!!Total population!!One race!!Black or African American,RACE_TP_1_BLK_AFR_AMER
+DP05_0039E,Estimate!!RACE!!Total population!!One race!!American Indian and Alaska Native,RACE_TP_1_AMER_IND_ALAS_NAT
+DP05_0040E,Estimate!!RACE!!Total population!!One race!!American Indian and Alaska Native!!Cherokee tribal grouping,RACE_TP_1_AIAN_CHEROKEE
+DP05_0041E,Estimate!!RACE!!Total population!!One race!!American Indian and Alaska Native!!Chippewa tribal grouping,RACE_TP_1_AIAN_CHIPPEWA
+DP05_0042E,Estimate!!RACE!!Total population!!One race!!American Indian and Alaska Native!!Navajo tribal grouping,RACE_TP_1_NAVAJO
+DP05_0043E,Estimate!!RACE!!Total population!!One race!!American Indian and Alaska Native!!Sioux tribal grouping,RACE_TP_1_SIOUX
+DP05_0044E,Estimate!!RACE!!Total population!!One race!!Asian,RACE_TP_1_ASIAN
+DP05_0045E,Estimate!!RACE!!Total population!!One race!!Asian!!Asian Indian,RACE_TP_1_ASIAN_INDIAN
+DP05_0046E,Estimate!!RACE!!Total population!!One race!!Asian!!Chinese,RACE_TP_1_ASIAN_CHINESE
+DP05_0047E,Estimate!!RACE!!Total population!!One race!!Asian!!Filipino,RACE_TP_1_ASIAN_JAPANESE
+DP05_0048E,Estimate!!RACE!!Total population!!One race!!Asian!!Japanese,RACE_TP_1_ASIAN_FILIPINO
+DP05_0049E,Estimate!!RACE!!Total population!!One race!!Asian!!Korean,RACE_TP_1_ASIAN_KOREAN
+DP05_0050E,Estimate!!RACE!!Total population!!One race!!Asian!!Vietnamese,RACE_TP_1_ASIAN_VIETNAMESE
+DP05_0051E,Estimate!!RACE!!Total population!!One race!!Asian!!Other Asian,RACE_TP_1_ASIAN_OTHER
+DP05_0052E,Estimate!!RACE!!Total population!!One race!!Native Hawaiian and Other Pacific Islander,RACE_TP_1_NAT_HAW_OTH_PAC_ISD
+DP05_0053E,Estimate!!RACE!!Total population!!One race!!Native Hawaiian and Other Pacific Islander!!Native Hawaiian,RACE_TP_1_NHOPI_NAT_HAWAIIAN
+DP05_0054E,Estimate!!RACE!!Total population!!One race!!Native Hawaiian and Other Pacific Islander!!Guamanian or Chamorro,RACE_TP_1_NHOPI_GUAMANIAN_CHAMORRO
+DP05_0055E,Estimate!!RACE!!Total population!!One race!!Native Hawaiian and Other Pacific Islander!!Samoan,RACE_TP_1_NHOPI_SAMOAN
+DP05_0056E,Estimate!!RACE!!Total population!!One race!!Native Hawaiian and Other Pacific Islander!!Other Pacific Islander,RACE_TP_1_NHOPI_OTH_PAC_ISD
+DP05_0057E,Estimate!!RACE!!Total population!!One race!!Some other race,RACE_TP_1_SOME_OTH_RACE
+DP05_0059E,Estimate!!RACE!!Total population!!Two or more races!!White and Black or African American,RACE_TP_2_MORE_WHITE_BLK_AFR_AMERT
+DP05_0060E,Estimate!!RACE!!Total population!!Two or more races!!White and American Indian and Alaska Native,RACE_TP_2_MORE_WHITE_AMER_IND_ALAS_NAT
+DP05_0061E,Estimate!!RACE!!Total population!!Two or more races!!White and Asian,RACE_TP_2_MORE_WHITE_ASIAN
+DP05_0062E,Estimate!!RACE!!Total population!!Two or more races!!Black or African American and American Indian and Alaska Native,RACE_TP_2_MORE_BLK_AFR_AMER_AMER_INDIAN_ALAS_NAT
+DP05_0063E,Estimate!!Race alone or in combination with one or more other races!!Total population,RACE_ALONE_1_2_MORE_TOTAL_POP
+DP05_0064E,Estimate!!Race alone or in combination with one or more other races!!Total population!!White,RACE_ALONE_1_2_MORE_TP_WHITE
+DP05_0065E,Estimate!!Race alone or in combination with one or more other races!!Total population!!Black or African American,RACE_ALONE_1_2_MORE_TP_BLK_AFR_AMER
+DP05_0066E,Estimate!!Race alone or in combination with one or more other races!!Total population!!American Indian and Alaska Native,RACE_ALONE_1_2_MORE_TP_AMER_IND_ALAS_NAT
+DP05_0067E,Estimate!!Race alone or in combination with one or more other races!!Total population!!Asian,RACE_ALONE_1_2_MORE_TP_ASIAN
+DP05_0068E,Estimate!!Race alone or in combination with one or more other races!!Total population!!Native Hawaiian and Other Pacific Islander,RACE_ALONE_1_2_MORE_TP_NAT_HAW_OTH_PAC_ISD
+DP05_0069E,Estimate!!Race alone or in combination with one or more other races!!Total population!!Some other race,RACE_ALONE_1_2_MORE_TP_SOME_OTH_RACE
+DP05_0070E,Estimate!!HISPANIC OR LATINO AND RACE!!Total population,HISPANIC_LATINO_RACE_TOTAL_POP
+DP05_0071E,Estimate!!HISPANIC OR LATINO AND RACE!!Total population!!Hispanic or Latino (of any race),HL_RACE_HISPANIC_LATINO
+DP05_0072E,Estimate!!HISPANIC OR LATINO AND RACE!!Total population!!Hispanic or Latino (of any race)!!Mexican,HL_RACE_MEXICAN
+DP05_0073E,Estimate!!HISPANIC OR LATINO AND RACE!!Total population!!Hispanic or Latino (of any race)!!Puerto Rican,HL_RACE_PUERTO_RICAN
+DP05_0074E,Estimate!!HISPANIC OR LATINO AND RACE!!Total population!!Hispanic or Latino (of any race)!!Cuban,HL_RACE_CUBAN
+DP05_0075E,Estimate!!HISPANIC OR LATINO AND RACE!!Total population!!Hispanic or Latino (of any race)!!Other Hispanic or Latino,HL_RACE_OTHER_HISPANIC_LATINO
+DP05_0076E,Estimate!!HISPANIC OR LATINO AND RACE!!Total population!!Not Hispanic or Latino,HL_NOT_HISPANIC_LATINO_TOTAL_POP
+DP05_0077E,Estimate!!HISPANIC OR LATINO AND RACE!!Total population!!Not Hispanic or Latino!!White alone,HL_NOT_HILA_WHITE_ALONE
+DP05_0078E,Estimate!!HISPANIC OR LATINO AND RACE!!Total population!!Not Hispanic or Latino!!Black or African American alone,HL_NOT_HILA_BLK_AFR_AMER
+DP05_0079E,Estimate!!HISPANIC OR LATINO AND RACE!!Total population!!Not Hispanic or Latino!!American Indian and Alaska Native alone,HL_NOT_HILA_AMER_IND_ALAS_NAT_ALONE
+DP05_0080E,Estimate!!HISPANIC OR LATINO AND RACE!!Total population!!Not Hispanic or Latino!!Asian alone,HL_NOT_HILA_ASIAN_ALONE
+DP05_0081E,Estimate!!HISPANIC OR LATINO AND RACE!!Total population!!Not Hispanic or Latino!!Native Hawaiian and Other Pacific Islander alone,HL_NOT_HILA_NAT_HAW_OTH_PAC_ISD_ALONE
+DP05_0082E,Estimate!!HISPANIC OR LATINO AND RACE!!Total population!!Not Hispanic or Latino!!Some other race alone,HL_NOT_HILA_SOME_OTH_RACE_ALONE
+DP05_0083E,Estimate!!HISPANIC OR LATINO AND RACE!!Total population!!Not Hispanic or Latino!!Two or more races,HL_NOT_HILA_2_MORE_RACE
+DP05_0084E,Estimate!!HISPANIC OR LATINO AND RACE!!Total population!!Not Hispanic or Latino!!Two or more races!!Two races including Some other race,HL_NOT_HILA_2_MORE_INC_SOME_OTH_RACE
+DP05_0085E,"Estimate!!HISPANIC OR LATINO AND RACE!!Total population!!Not Hispanic or Latino!!Two or more races!!Two races excluding Some other race, and Three or more races",HL_NOT_HILA_2_MORE_EXC_SOME_OTHE_RACE_3_ MORE
+DP05_0086E,Estimate!!Total housing units,TOTAL_HOUSING_UNITS
+DP05_0087E,"Estimate!!CITIZEN, VOTING AGE POPULATION!!Citizen, 18 and over population",CITIZEN_VOTE_AGE_POP_18_ABOVE
+DP05_0088E,"Estimate!!CITIZEN, VOTING AGE POPULATION!!Citizen, 18 and over population!!Male",CITIZEN_VOTE_AGE_POP_18_ABOVE_MALE
+DP05_0089E,"Estimate!!CITIZEN, VOTING AGE POPULATION!!Citizen, 18 and over population!!Female",CITIZEN_VOTE_AGE_POP_18_ABOVE_FEMALE
