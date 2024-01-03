@@ -34,7 +34,7 @@ ui <- dashboardPage(
           ),
           box(
             title = "Population Distribution over Gender",
-            width = 5,
+            width = 6,
             splitLayout(cellWidths = c("75%", "25%"),
                         plotlyOutput("genderPlot"),
                         radioButtons("ageCondition", label = "Select Age Condition:",
@@ -44,7 +44,7 @@ ui <- dashboardPage(
           box(
             plotlyOutput("ageLimitPlot"),
             title = "Population Distribution over Age Limit groups",
-            width = 7
+            width = 6
           )
         )
       ),
